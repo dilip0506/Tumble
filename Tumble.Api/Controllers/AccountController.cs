@@ -84,13 +84,6 @@ namespace Tumble.Api.Controllers
             }
         }
 
-        [HttpGet]
-        [Route("~/api/tumble/swagger")]
-        public IActionResult Index()
-        {
-            return Ok("you rock");
-        }
-
         private string CreateAuthnenticationToken(int userId)
         {
             try

@@ -38,6 +38,8 @@ namespace Tumble.Api
 
             services.AddTumbleAuthentication(Configuration);
 
+            services.AddSwaggerGen();
+
             services.Configure<DataAccess.Settings>(Configuration.GetSection("DatabaseConnections"));
             services.Configure<Services.Email.EmailSettings>(Configuration.GetSection("EmailSettings"));
         }
@@ -59,6 +61,12 @@ namespace Tumble.Api
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
             });
 
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Tumble V1");
+            });
             //app.UseHttpsRedirection();
 
             app.UseRouting();
