@@ -14,8 +14,12 @@
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "development"
+        "ASPNETCORE_ENVIRONMENT": "dev"
       }
+    },
+    "WSL 2": {
+      "commandName": "WSL2",
+      "distributionName": ""
     }
   }
 }
