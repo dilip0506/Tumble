@@ -41,7 +41,7 @@ namespace Tumble.Services.Account
             }
             catch (Exception ex) {
                 _logger.LogError((int)LogEvents.Error,exception: ex, "AuthenticateUser");
-                throw ex;
+                throw;
             }
         }
 

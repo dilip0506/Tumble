@@ -1,15 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <Configurations>Debug;Release;Stage</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.78" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+    <PackageReference Include="Npgsql" Version="5.0.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Tumble.Core\Tumble.Core.csproj" />
     <ProjectReference Include="..\Tumble.DTO\Tumble.DTO.csproj" />
   </ItemGroup>
 
