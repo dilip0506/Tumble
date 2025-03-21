@@ -1,11 +1,8 @@
 ﻿using Microsoft.Extensions.Options;
 using Npgsql;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Text;
 
-namespace Tumble.DataAccess
+namespace Tumble.Infrastructure
 {
     abstract class PostgreConnection
     {
@@ -16,8 +13,9 @@ namespace Tumble.DataAccess
         }
         public IDbConnection GetConnection()
         {
-            var conn =  new NpgsqlConnection(_settings.ConnectionString);
-            if (conn.State != ConnectionState.Open) {
+            var conn = new NpgsqlConnection(_settings.ConnectionString);
+            if (conn.State != ConnectionState.Open)
+            {
                 conn.Open();
             }
             return conn;

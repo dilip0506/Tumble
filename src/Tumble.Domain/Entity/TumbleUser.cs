@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
-
-namespace Tumble.DTO.Entity
+﻿namespace Tumble.Domain.Entity
 {
     public class TumbleUser
     {
-        public int UserId { get; set; } 
+        public int UserId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string PasswordHash { get; set; }

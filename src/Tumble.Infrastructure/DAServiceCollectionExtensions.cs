@@ -1,11 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Tumble.Core.DataAccess.Interface.Account;
-using Tumble.DataAccess.Account;
+using Tumble.Domain.DataAccess.Interface.Account;
+using Tumble.Infrastructure.Account;
 
-namespace Tumble.DataAccess
+namespace Tumble.Infrastructure
 {
     public static class DAServiceCollectionExtensions
     {

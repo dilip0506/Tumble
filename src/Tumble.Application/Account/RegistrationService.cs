@@ -1,21 +1,20 @@
-﻿using System;
+﻿using AutoMapper;
 using Microsoft.Extensions.Logging;
-using System.Collections.Generic;
-using System.Text;
-using Tumble.Core.Services.Interface.Account;
-using System.Threading.Tasks;
-using Tumble.Core.DataAccess.Interface.Account;
-using Tumble.DTO.Model.Account;
-using Tumble.DTO.Entity;
-using AutoMapper;
-using Tumble.DTO.Enum.Account;
-using Tumble.Core.Services.Interface.Email;
-using Tumble.DTO.Model.Email;
+using System;
 using System.Security.Cryptography;
-using Tumble.Services.Helper;
-using Tumble.DTO.Enum;
+using System.Text;
+using System.Threading.Tasks;
+using Tumble.Application.Helper;
+using Tumble.Domain.DataAccess.Interface.Account;
+using Tumble.Domain.Entity;
+using Tumble.Domain.Enum;
+using Tumble.Domain.Enum.Account;
+using Tumble.Domain.Model.Account;
+using Tumble.Domain.Model.Email;
+using Tumble.Domain.Services.Interface.Account;
+using Tumble.Domain.Services.Interface.Email;
 
-namespace Tumble.Services.Account
+namespace Tumble.Application.Account
 {
     class RegistrationService : IRegistrationService
     {
@@ -77,7 +76,8 @@ namespace Tumble.Services.Account
                     RegistrationStutus = UserRegistrationStatusCode.RegistrationPending
                 };
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 _logger.LogError((int)LogEvents.Error, exception: ex, "CreateUser");
                 throw;
             }

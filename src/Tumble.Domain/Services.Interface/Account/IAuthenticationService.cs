@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using Tumble.DTO.Entity;
-using Tumble.DTO.Model.Account;
+﻿using System.Threading.Tasks;
+using Tumble.Domain.Entity;
+using Tumble.Domain.Model.Account;
 
-namespace Tumble.Core.Services.Interface.Account
+namespace Tumble.Domain.Services.Interface.Account
 {
     public interface IAuthenticationService
     {

@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using Tumble.DTO.Entity;
+﻿using System.Threading.Tasks;
+using Tumble.Domain.Entity;
 
-namespace Tumble.Core.Services.Interface.Account
+namespace Tumble.Domain.Services.Interface.Account
 {
     public interface IUserService
     {

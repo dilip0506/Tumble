@@ -1,18 +1,14 @@
-﻿using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Dapper;
+using Microsoft.Extensions.Options;
 using System.Threading.Tasks;
-using Tumble.Core.DataAccess.Interface.Account;
-using Tumble.DTO.Entity;
-using Tumble.DTO.Model.Account;
-using Dapper;
+using Tumble.Domain.DataAccess.Interface.Account;
+using Tumble.Domain.Entity;
 
-namespace Tumble.DataAccess.Account
+namespace Tumble.Infrastructure.Account
 {
     class DAUser : PostgreConnection, IDAUser
     {
-        public DAUser(IOptions<Settings> settings) : base(settings){}
+        public DAUser(IOptions<Settings> settings) : base(settings) { }
 
         public async Task<TumbleUser> GetUserByEmail(string Email)
         {

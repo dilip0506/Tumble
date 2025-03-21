@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using Tumble.Core.DataAccess.Interface.Account;
-using Tumble.Core.Services.Interface.Account;
-using Tumble.DTO.Entity;
+﻿using System.Threading.Tasks;
+using Tumble.Domain.DataAccess.Interface.Account;
+using Tumble.Domain.Entity;
+using Tumble.Domain.Services.Interface.Account;
 
-namespace Tumble.Services.Account
+namespace Tumble.Application.Account
 {
     class UserService : IUserService
     {

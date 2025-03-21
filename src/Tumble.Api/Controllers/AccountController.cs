@@ -2,19 +2,14 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
-using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using Tumble.Core.Services.Interface.Account;
-using Tumble.DTO.Entity;
-using Tumble.DTO.Enum;
-using Tumble.DTO.Model.Account;
-
+using Tumble.Domain.Enum;
+using Tumble.Domain.Model.Account;
+using Tumble.Domain.Services.Interface.Account;
 
 namespace Tumble.Api.Controllers
 {
@@ -55,7 +50,7 @@ namespace Tumble.Api.Controllers
                 if (isExistingUser == null)
                 {
                     var result = await _registrationService.CreateUser(tumbleUser);
-                    result.Token = CreateAuthnenticationToken(result.UserId);
+                  //  result.Token = CreateAuthnenticationToken(result.UserId);
                     return Ok(result);
                 }
                 else
@@ -77,7 +72,8 @@ namespace Tumble.Api.Controllers
             try
             {
                 var user = await _authenticationService.AuthenticateUser(loginDetails);
-                return Ok(CreateAuthnenticationToken(user.UserId));
+                return Ok(user);
+              //  return Ok(CreateAuthnenticationToken(user.UserId));
             }
             catch (Exception ex)
             {
@@ -85,30 +81,30 @@ namespace Tumble.Api.Controllers
             }
         }
 
-        private string CreateAuthnenticationToken(int userId)
-        {
-            try
-            {
-               
-                var tokenHandler = new JwtSecurityTokenHandler();
-                var key = Encoding.ASCII.GetBytes(_configuration["TokenEncryptionkey"]);
-                var tokenDescriptor = new SecurityTokenDescriptor
-                {
-                    Subject = new ClaimsIdentity(new Claim[]
-                    {
-                    new Claim(ClaimTypes.Name, userId.ToString())
-                    }),
-                    Expires = DateTime.UtcNow.AddDays(7),
-                    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-                };
-                var token = tokenHandler.CreateToken(tokenDescriptor);
-                return tokenHandler.WriteToken(token);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError((int)LogEvents.Error, exception: ex, "CreateAuthnenticationToken");
-                throw ex;
-            }
-        }
+        //private string CreateAuthnenticationToken(int userId)
+        //{
+        //    try
+        //    {
+
+        //        var tokenHandler = new JwtSecurityTokenHandler();
+        //        var key = Encoding.ASCII.GetBytes(_configuration["TokenEncryptionkey"]);
+        //        var tokenDescriptor = new SecurityTokenDescriptor
+        //        {
+        //            Subject = new ClaimsIdentity(new Claim[]
+        //            {
+        //            new Claim(ClaimTypes.Name, userId.ToString())
+        //            }),
+        //            Expires = DateTime.UtcNow.AddDays(7),
+        //            SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+        //        };
+        //        var token = tokenHandler.CreateToken(tokenDescriptor);
+        //        return tokenHandler.WriteToken(token);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        _logger.LogError((int)LogEvents.Error, exception: ex, "CreateAuthnenticationToken");
+        //        throw ex;
+        //    }
+        //}
     }
 }

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Tumble.DTO.Model.Email
+﻿namespace Tumble.Domain.Model.Email
 {
     public class EmailRequest
     {

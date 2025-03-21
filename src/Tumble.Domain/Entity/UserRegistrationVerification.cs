@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Tumble.DTO.Enum.Account;
+﻿using Tumble.Domain.Enum.Account;
 
-namespace Tumble.DTO.Entity
+namespace Tumble.Domain.Entity
 {
     public class UserRegistrationVerification
     {

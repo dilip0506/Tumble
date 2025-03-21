@@ -1,13 +1,11 @@
 ﻿using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Tumble.DTO.Entity;
-using Tumble.DTO.Model.Account;
+using Tumble.Domain.Entity;
+using Tumble.Domain.Model.Account;
 
-namespace Tumble.Services.Account
+namespace Tumble.Application.Account
 {
-    class MappingAccount : Profile {
+    class MappingAccount : Profile
+    {
         public MappingAccount()
         {
             CreateMap<RegistrationModel, TumbleUser>();

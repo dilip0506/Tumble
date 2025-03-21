@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.Extensions.Logging;
+using System;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using Tumble.Core.DataAccess.Interface.Account;
-using Tumble.Core.Services.Interface.Account;
-using Tumble.DTO.Entity;
-using Tumble.DTO.Model.Account;
-using System.Security.Cryptography;
-using Tumble.Services.CustomException;
-using Microsoft.Extensions.Logging;
-using Tumble.DTO.Enum;
+using Tumble.Application.CustomException;
+using Tumble.Domain.Entity;
+using Tumble.Domain.Enum;
+using Tumble.Domain.Model.Account;
+using Tumble.Domain.Services.Interface.Account;
 
-namespace Tumble.Services.Account
+namespace Tumble.Application.Account
 {
     class AuthenticationService : IAuthenticationService
     {
@@ -39,8 +37,9 @@ namespace Tumble.Services.Account
 
                 return user;
             }
-            catch (Exception ex) {
-                _logger.LogError((int)LogEvents.Error,exception: ex, "AuthenticateUser");
+            catch (Exception ex)
+            {
+                _logger.LogError((int)LogEvents.Error, exception: ex, "AuthenticateUser");
                 throw;
             }
         }

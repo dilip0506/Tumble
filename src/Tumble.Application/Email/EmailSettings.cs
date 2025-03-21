@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Tumble.Services.Email
+﻿namespace Tumble.Application.Email
 {
     public class EmailSettings
     {

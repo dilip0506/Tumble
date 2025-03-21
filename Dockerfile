@@ -2,8 +2,8 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0@sha256:35792ea4ad1db051981f62b313f1be3b46b
 WORKDIR /App
 
 # Copy everything
-COPY scr ./
-#
+COPY src .
+
 RUN dotnet restore
 
 RUN dotnet publish -o out

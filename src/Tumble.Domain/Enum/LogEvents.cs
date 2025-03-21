@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Tumble.DTO.Enum
+﻿namespace Tumble.Domain.Enum
 {
     public enum LogEvents
     {

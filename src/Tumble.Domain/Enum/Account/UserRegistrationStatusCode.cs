@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Tumble.DTO.Enum.Account
+﻿namespace Tumble.Domain.Enum.Account
 {
     public enum UserRegistrationStatusCode
     {

@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Transactions;
+﻿using System.Transactions;
 
-namespace Tumble.Services.Helper
+namespace Tumble.Application.Helper
 {
     public static class TransactionScopeAsync
     {

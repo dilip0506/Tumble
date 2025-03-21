@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Tumble.DTO.Entity
+﻿namespace Tumble.Domain.Entity
 {
     public class Address
     {

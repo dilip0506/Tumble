@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Tumble.DataAccess
+﻿namespace Tumble.Infrastructure
 {
     public class Settings
     {

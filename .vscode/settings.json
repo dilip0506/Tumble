@@ -1,5 +1,5 @@
 {
     "files.exclude": {
-        "src/": true
+        "src/": false
     }
 }

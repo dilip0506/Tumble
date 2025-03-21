@@ -1,18 +1,15 @@
 ﻿using Dapper;
 using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
-using Tumble.Core.DataAccess.Interface.Account;
-using Tumble.DTO.Entity;
+using Tumble.Domain.DataAccess.Interface.Account;
+using Tumble.Domain.Entity;
 
-namespace Tumble.DataAccess.Account
+namespace Tumble.Infrastructure.Account
 {
     class DARegistrartion : PostgreConnection, IDARegistrartion
     {
 
-        public DARegistrartion(IOptions<Settings> settings) :base(settings){}
+        public DARegistrartion(IOptions<Settings> settings) : base(settings) { }
 
         public async Task<int> InsertUser(TumbleUser tumbleUser)
         {
@@ -22,7 +19,7 @@ namespace Tumble.DataAccess.Account
 
         public async Task<int> InsertAddress(Address userAddress)
         {
-            using var conn = GetConnection();          
+            using var conn = GetConnection();
             return await conn.QuerySingleOrDefaultAsync<int>(UsersQueries.InsertAddress, userAddress);
         }
 

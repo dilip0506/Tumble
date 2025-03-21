@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using Tumble.DTO.Entity;
-using Tumble.DTO.Model.Account;
+﻿using System.Threading.Tasks;
+using Tumble.Domain.Entity;
 
-namespace Tumble.Core.DataAccess.Interface.Account
+namespace Tumble.Domain.DataAccess.Interface.Account
 {
     public interface IDAUser
     {

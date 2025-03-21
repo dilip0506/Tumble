@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Tumble.DataAccess.Account
+﻿namespace Tumble.Infrastructure.Account
 {
     public static class UsersQueries
     {
         #region Registration
         public static string InsertUser = @"INSERT INTO tumbleuser (firstname,lastname,passwordhash,passwordsalt,phone,email,addressid)
                                           VALUES (@FirstName,@LastName,@PasswordHash,@PasswordSalt,@Phone,@Email,@AddressId) RETURNING userid;";
-        
+
         public static string InsertAddress = @"INSERT INTO address (street,streetoptional,city,state,zipcode)
                                           VALUES (@Street,@StreetOptional,@City,@State,@ZipCode) RETURNING addressid;";
 
