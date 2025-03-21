@@ -48,6 +48,7 @@ namespace Tumble.Api.Controllers
         public async Task<IActionResult> CreateUser([FromBody] RegistrationModel tumbleUser)
         {
             _logger.LogInformation("Create User Controller call");
+            return Ok(new List<string>() { "Test" });
             try
             {
                 var isExistingUser = await _userService.GetUserByEmail(tumbleUser.Email);

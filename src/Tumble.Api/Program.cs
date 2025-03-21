@@ -17,7 +17,7 @@ namespace Tumble.Api
         public static void Main(string[] args)
         {
             var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
-            var logger = NLogBuilder.ConfigureNLog($"nlog.{environment}.config").GetCurrentClassLogger();
+         //   var logger = NLogBuilder.ConfigureNLog($"nlog.{environment}.config").GetCurrentClassLogger();
             try
             {
                 CreateHostBuilder(args).Build().Run();
@@ -25,7 +25,7 @@ namespace Tumble.Api
             catch (Exception ex)
             {
                 //NLog: catch setup errors
-                logger.Error(ex, "Stopped program because of exception");
+             //   logger.Error(ex, "Stopped program because of exception");
                 throw ex;
             }
             finally
