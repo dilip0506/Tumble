@@ -3,8 +3,8 @@ WORKDIR /App
 
 # Copy everything
 COPY src .
-
-RUN dotnet restore
+COPY Directory.Packages.props .
+RUN dotnet restore Tumble.Api/Tumble.Api.csproj
 
 RUN dotnet publish -o out
 

@@ -1,3 +1,1 @@
-docker buildx build -t dev -f ../Dockerfile .
-
-net user administrator /active:yes
+docker buildx build -t dev -f Dockerfile .
