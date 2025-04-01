@@ -14,10 +14,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseSwaggerUI();
-app.UseSwagger();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-//app.UseAuthorization();
+app.UseAuthorization();
 app.Run();

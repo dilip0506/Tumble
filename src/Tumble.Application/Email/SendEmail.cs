@@ -32,7 +32,8 @@ namespace Tumble.Application.Email
                 smtpClient.Authenticate(_emailSettings.SmtpUserName, _emailSettings.SmtpPassword);
                 await smtpClient.SendAsync(emailMessage);
                 smtpClient.Disconnect(true);
-            };
+            }
+            ;
         }
     }
 }

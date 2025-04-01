@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tumble.Domain", "src\Tumble
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tumble.Logging", "src\Tumble.Logging\Tumble.Logging.csproj", "{DE617031-E1BB-4F59-A088-5523F04026E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tumble.GraphQL", "src\Tumble.GraphQl\Tumble.GraphQL.csproj", "{4AA1ECA8-C357-4678-ED70-2654ED1707A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,12 @@ Global
 		{DE617031-E1BB-4F59-A088-5523F04026E7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DE617031-E1BB-4F59-A088-5523F04026E7}.Stage|Any CPU.ActiveCfg = Debug|Any CPU
 		{DE617031-E1BB-4F59-A088-5523F04026E7}.Stage|Any CPU.Build.0 = Debug|Any CPU
+		{4AA1ECA8-C357-4678-ED70-2654ED1707A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AA1ECA8-C357-4678-ED70-2654ED1707A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AA1ECA8-C357-4678-ED70-2654ED1707A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AA1ECA8-C357-4678-ED70-2654ED1707A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AA1ECA8-C357-4678-ED70-2654ED1707A9}.Stage|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AA1ECA8-C357-4678-ED70-2654ED1707A9}.Stage|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +81,7 @@ Global
 		{55F219BB-9A77-4F5A-B5DF-6EA09B1ADA5A} = {A6CC9849-3332-4ED5-8DC2-5B52A9BC4F35}
 		{C3E64E32-B715-4324-AA53-08D82327FD62} = {A6CC9849-3332-4ED5-8DC2-5B52A9BC4F35}
 		{DE617031-E1BB-4F59-A088-5523F04026E7} = {A6CC9849-3332-4ED5-8DC2-5B52A9BC4F35}
+		{4AA1ECA8-C357-4678-ED70-2654ED1707A9} = {A6CC9849-3332-4ED5-8DC2-5B52A9BC4F35}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D67B64DD-F455-437D-955E-8277BEEE1BB5}
