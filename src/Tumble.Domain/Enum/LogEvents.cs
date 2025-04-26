@@ -1,4 +1,4 @@
-﻿namespace Tumble.Domain.Enum
+﻿namespace Tumble.User.Domain.Enum
 {
     public enum LogEvents
     {

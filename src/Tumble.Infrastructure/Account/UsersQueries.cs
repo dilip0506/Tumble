@@ -1,4 +1,4 @@
-﻿namespace Tumble.Infrastructure.Account
+﻿namespace Tumble.User.Infrastructure.Account
 {
     public static class UsersQueries
     {

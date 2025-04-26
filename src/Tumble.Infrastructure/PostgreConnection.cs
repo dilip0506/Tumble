@@ -2,7 +2,7 @@
 using Npgsql;
 using System.Data;
 
-namespace Tumble.Infrastructure
+namespace Tumble.User.Infrastructure
 {
     abstract class PostgreConnection
     {

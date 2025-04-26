@@ -1,4 +1,4 @@
-﻿namespace Tumble.Application
+﻿namespace Tumble.User.Application
 {
     class Settings
     {

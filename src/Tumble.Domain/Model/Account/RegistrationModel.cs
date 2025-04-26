@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Tumble.Domain.Model.Account
+namespace Tumble.User.Domain.Model.Account
 {
     public class RegistrationModel
     {

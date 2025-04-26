@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
-using Tumble.Domain.DataAccess.Interface.Account;
-using Tumble.Domain.Entity;
-using Tumble.Domain.Services.Interface.Account;
+using Tumble.User.Domain.DataAccess.Interface.Account;
+using Tumble.User.Domain.Entity;
+using Tumble.User.Domain.Services.Interface.Account;
 
-namespace Tumble.Application.Account
+namespace Tumble.User.Application.Account
 {
     class UserService : IUserService
     {

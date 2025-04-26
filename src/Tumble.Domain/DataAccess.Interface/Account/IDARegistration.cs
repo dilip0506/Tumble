@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using Tumble.Domain.Entity;
+using Tumble.User.Domain.Entity;
 
-namespace Tumble.Domain.DataAccess.Interface.Account
+namespace Tumble.User.Domain.DataAccess.Interface.Account
 {
     public interface IDARegistrartion
     {

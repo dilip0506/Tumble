@@ -4,17 +4,18 @@ using System;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using Tumble.Application.Helper;
-using Tumble.Domain.DataAccess.Interface.Account;
 using Tumble.Domain.Entity;
-using Tumble.Domain.Enum;
-using Tumble.Domain.Enum.Account;
-using Tumble.Domain.Model.Account;
 using Tumble.Domain.Model.Email;
-using Tumble.Domain.Services.Interface.Account;
-using Tumble.Domain.Services.Interface.Email;
+using Tumble.User.Application.Helper;
+using Tumble.User.Domain.DataAccess.Interface.Account;
+using Tumble.User.Domain.Entity;
+using Tumble.User.Domain.Enum;
+using Tumble.User.Domain.Enum.Account;
+using Tumble.User.Domain.Model.Account;
+using Tumble.User.Domain.Services.Interface.Account;
+using Tumble.User.Domain.Services.Interface.Email;
 
-namespace Tumble.Application.Account
+namespace Tumble.User.Application.Account
 {
     class RegistrationService : IRegistrationService
     {

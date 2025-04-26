@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using Tumble.Domain.Entity;
-using Tumble.Domain.Model.Account;
+using Tumble.User.Domain.Entity;
+using Tumble.User.Domain.Model.Account;
 
-namespace Tumble.Application.Account
+namespace Tumble.User.Application.Account
 {
     class MappingAccount : Profile
     {

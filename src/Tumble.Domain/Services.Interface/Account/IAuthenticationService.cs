@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
-using Tumble.Domain.Entity;
-using Tumble.Domain.Model.Account;
+using Tumble.User.Domain.Entity;
+using Tumble.User.Domain.Model.Account;
 
-namespace Tumble.Domain.Services.Interface.Account
+namespace Tumble.User.Domain.Services.Interface.Account
 {
     public interface IAuthenticationService
     {

@@ -1,4 +1,4 @@
-﻿namespace Tumble.Domain.Services.Interface.Email
+﻿namespace Tumble.User.Domain.Services.Interface.Email
 {
     public interface IEmail
     {

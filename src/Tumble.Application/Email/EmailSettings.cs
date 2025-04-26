@@ -1,4 +1,4 @@
-﻿namespace Tumble.Application.Email
+﻿namespace Tumble.User.Application.Email
 {
     public class EmailSettings
     {

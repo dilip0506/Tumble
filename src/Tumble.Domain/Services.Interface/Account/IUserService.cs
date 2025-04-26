@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using Tumble.Domain.Entity;
+using Tumble.User.Domain.Entity;
 
-namespace Tumble.Domain.Services.Interface.Account
+namespace Tumble.User.Domain.Services.Interface.Account
 {
     public interface IUserService
     {

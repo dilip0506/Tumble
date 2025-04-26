@@ -1,11 +1,12 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
 using Tumble.Application.Account;
-using Tumble.Application.Email;
-using Tumble.Domain.Services.Interface.Account;
-using Tumble.Domain.Services.Interface.Email;
+using Tumble.User.Application.Account;
+using Tumble.User.Application.Email;
+using Tumble.User.Domain.Services.Interface.Account;
+using Tumble.User.Domain.Services.Interface.Email;
 
-namespace Tumble.Application
+namespace Tumble.User.Application
 {
     public static class ServiceCollectionExtensions
     {

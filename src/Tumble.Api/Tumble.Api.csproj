@@ -10,7 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tumble.Domain\Tumble.Domain.csproj" />
+    <ProjectReference Include="..\..\Tumble.InMemoryEventBus\Tumble.InMemoryEventBus.csproj" />
+    <ProjectReference Include="..\Tumble.Domain\Tumble.User.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

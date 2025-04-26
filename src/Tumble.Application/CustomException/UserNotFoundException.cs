@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Tumble.Application.CustomException
+namespace Tumble.User.Application.CustomException
 {
     public class UserNotFoundException : ArgumentException
     {

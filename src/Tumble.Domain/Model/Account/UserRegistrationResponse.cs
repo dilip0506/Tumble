@@ -1,6 +1,6 @@
-﻿using Tumble.Domain.Enum.Account;
+﻿using Tumble.User.Domain.Enum.Account;
 
-namespace Tumble.Domain.Model.Account
+namespace Tumble.User.Domain.Model.Account
 {
     public class UserRegistrationResponse
     {

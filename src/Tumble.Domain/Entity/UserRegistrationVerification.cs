@@ -1,6 +1,6 @@
-﻿using Tumble.Domain.Enum.Account;
+﻿using Tumble.User.Domain.Enum.Account;
 
-namespace Tumble.Domain.Entity
+namespace Tumble.User.Domain.Entity
 {
     public class UserRegistrationVerification
     {

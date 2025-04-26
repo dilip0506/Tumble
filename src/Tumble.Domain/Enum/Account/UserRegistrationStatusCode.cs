@@ -1,4 +1,4 @@
-﻿namespace Tumble.Domain.Enum.Account
+﻿namespace Tumble.User.Domain.Enum.Account
 {
     public enum UserRegistrationStatusCode
     {

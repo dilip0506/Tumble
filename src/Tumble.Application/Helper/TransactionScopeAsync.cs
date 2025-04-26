@@ -1,6 +1,6 @@
 ﻿using System.Transactions;
 
-namespace Tumble.Application.Helper
+namespace Tumble.User.Application.Helper
 {
     public static class TransactionScopeAsync
     {

@@ -1,4 +1,4 @@
-﻿namespace Tumble.Infrastructure
+﻿namespace Tumble.User.Infrastructure
 {
     public class Settings
     {

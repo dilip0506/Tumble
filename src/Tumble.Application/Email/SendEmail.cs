@@ -3,10 +3,10 @@ using MailKit.Security;
 using Microsoft.Extensions.Options;
 using MimeKit;
 using System.Threading.Tasks;
-using Tumble.Domain.Model.Email;
-using Tumble.Domain.Services.Interface.Email;
+using Tumble.User.Domain.Model.Email;
+using Tumble.User.Domain.Services.Interface.Email;
 
-namespace Tumble.Application.Email
+namespace Tumble.User.Application.Email
 {
     class SendEmail : ISendEmail
     {

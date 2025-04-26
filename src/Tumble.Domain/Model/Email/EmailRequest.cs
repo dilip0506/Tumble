@@ -1,4 +1,4 @@
-﻿namespace Tumble.Domain.Model.Email
+﻿namespace Tumble.User.Domain.Model.Email
 {
     public class EmailRequest
     {

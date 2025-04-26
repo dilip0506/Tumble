@@ -5,9 +5,9 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Tumble.Domain.Enum;
-using Tumble.Domain.Model.Account;
-using Tumble.Domain.Services.Interface.Account;
+using Tumble.User.Domain.Enum;
+using Tumble.User.Domain.Model.Account;
+using Tumble.User.Domain.Services.Interface.Account;
 
 namespace Tumble.Api.Controllers
 {
